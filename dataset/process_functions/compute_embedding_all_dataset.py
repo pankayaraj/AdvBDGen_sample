@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore")
 
 
 
-embedding_path = "/cmlscratch/pan/RLHF_Poisoning/models/stella_en_1.5B_v5"
+embedding_path = "models/stella_en_1.5B_v5"
 embedding_model = SentenceTransformer(embedding_path, device="cuda")
 
 

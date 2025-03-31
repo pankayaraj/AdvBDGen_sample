@@ -199,12 +199,12 @@ save_dir_encoder, save_dir_decoder = preprocess_save_dir(args)
 
 #loading the dataset
 if args.dataset_type == "pku":
-    dataset = load_from_disk("/cmlscratch/pan/Backdoor_SS/datasets/PKU/dpo_processed/pku_clean_train")
+    dataset = load_from_disk("datasets/PKU/dpo_processed/pku_clean_train")
 elif args.dataset_type == "hh":
-    dataset = load_from_disk("/cmlscratch/pan/Backdoor_SS/datasets/Anthropic/train/harmless-original")
+    dataset = load_from_disk("datasets/Anthropic/train/harmless-original")
 
-train_dts = load_from_disk("/cmlscratch/pan/Backdoor_SS/datasets/PKU/encoder_decoder/pku_train_encoder_decoder")
-test_dts = load_from_disk("/cmlscratch/pan/Backdoor_SS/datasets/PKU/encoder_decoder/pku_test_encoder_decoder")
+train_dts = load_from_disk("datasets/PKU/encoder_decoder/pku_train_encoder_decoder")
+test_dts = load_from_disk("datasets/PKU/encoder_decoder/pku_test_encoder_decoder")
 
 
 #trianign configuration for the generator
